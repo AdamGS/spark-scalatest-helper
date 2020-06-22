@@ -59,7 +59,10 @@ trait SparkTest extends BeforeAndAfterAll {
    * Destroys the internal `SparkSession`. '''Must''' be called after every other cleaning up actions.
    */
   override def afterAll() = {
-    super.afterAll()
-    SparkSession.clearDefaultSession()
+    try {
+      SparkSession.clearDefaultSession()
+    } finally {
+      super.afterAll()
+    }
   }
 }
