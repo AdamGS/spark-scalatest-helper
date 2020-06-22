@@ -1,7 +1,7 @@
 package com.adamgs.spark.testing
 
 import com.adamgs.spark.DataFrameTools
-import org.apache.spark._
+import org.apache.spark.SparkConf
 import org.apache.spark.sql.{DataFrame, SparkSession}
 import org.scalactic.Equality
 import org.scalatest.{BeforeAndAfterAll, Suite}
