@@ -4,7 +4,7 @@ import org.scalatest._
 import org.scalatest.matchers.must.Matchers
 
 class TestingTestSpec extends FunSpec with SparkTest with Matchers {
-  override def configureSpark: SparkConf = {
+  override def sparkConfiguration: SparkConf = {
     val conf = new SparkConf
     conf.set("some_random", "value")
 

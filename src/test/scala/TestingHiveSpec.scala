@@ -5,7 +5,7 @@ import org.scalatest.matchers.must.Matchers
 class TestingHiveSpec extends AnyFunSpec with HiveSparkTest with Matchers {
   private val database = "db"
 
-  describe("TestingHiveSparkSession") {
+  describe("HiveSparkTest") {
     describe("Should create database") {
       it("Should work") {
         spark.sql(s"CREATE DATABASE $database")
